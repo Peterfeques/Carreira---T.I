@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tatiane Dias - Curso de Libras</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+        ::selection { background-color: #81D715; color: white; }
+    </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { sans: ['Inter', 'sans-serif'] }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="min-h-screen bg-slate-50 text-slate-900">
+    <!-- Header -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <div class="relative w-12 h-12 flex-shrink-0">
+                    <div class="absolute right-0 bottom-0 w-9 h-9 bg-[#8A0B82] rounded-2xl rounded-bl-none flex items-center justify-center shadow-sm">
+                        <i data-lucide="hand" class="w-5 h-5 text-white"></i>
+                    </div>
+                    <div class="absolute left-0 top-0 w-9 h-9 bg-[#81D715] rounded-full flex items-center justify-center z-10 shadow-sm">
+                        <i data-lucide="hand-metal" class="w-5 h-5 text-white"></i>
+                    </div>
+                </div>
+                <div class="flex flex-col">
+                    <span class="text-2xl font-black tracking-tight text-black leading-none">Tatiane Dias</span>
+                    <span class="text-[10px] font-semibold tracking-[0.2em] text-[#8A0B82] uppercase mt-1">Curso de Libras</span>
+                </div>
+            </div>
+            <nav class="hidden md:flex gap-8">
+                <a href="#sobre" class="text-sm font-bold text-slate-600 hover:text-[#8A0B82] transition-colors">Sobre</a>
+                <a href="#planos" class="text-sm font-bold text-slate-600 hover:text-[#8A0B82] transition-colors">Planos</a>
+                <a href="#depoimentos" class="text-sm font-bold text-slate-600 hover:text-[#8A0B82] transition-colors">Depoimentos</a>
+                <a href="#video" class="text-sm font-bold text-slate-600 hover:text-[#8A0B82] transition-colors">Vídeo</a>
+                <a href="#contato" class="text-sm font-bold text-slate-600 hover:text-[#8A0B82] transition-colors">Contato</a>
+            </nav>
+            <a href="https://wa.me/5521965757666" target="_blank" rel="noopener noreferrer" class="hidden md:flex items-center gap-2 bg-[#81D715] hover:bg-[#70bd12] text-white px-5 py-2.5 rounded-full font-bold transition-all shadow-sm hover:shadow-md">
+                <i data-lucide="message-circle" class="w-4 h-4"></i>
+                <span>Fale Conosco</span>
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="sobre" class="relative bg-white overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-br from-purple-50/50 to-lime-50/50"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-24 pb-32 relative">
+            <div class="text-center max-w-3xl mx-auto">
+                <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-purple-100 text-[#8A0B82] font-bold text-sm mb-8">
+                    <span class="relative flex h-2 w-2">
+                        <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#8A0B82] opacity-75"></span>
+                        <span class="relative inline-flex rounded-full h-2 w-2 bg-[#8A0B82]"></span>
+                    </span>
+                    Matrículas Abertas
+                </div>
+                <h1 class="text-5xl md:text-7xl font-extrabold text-slate-900 tracking-tight mb-8 leading-tight">
+                    Aprenda Libras e <span class="text-[#8A0B82]">transforme</span> a sua comunicação
+                </h1>
+                <p class="text-xl text-slate-600 mb-12 leading-relaxed">
+                    Cursos completos do básico ao avançado e especialização em interpretação musical com Tatiane Dias.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="#planos" class="bg-[#8A0B82] hover:bg-[#6d0866] text-white px-8 py-4 rounded-full font-bold text-lg transition-all shadow-lg hover:shadow-xl flex items-center justify-center gap-2">
+                        Conheça os Planos
+                        <i data-lucide="arrow-right" class="w-5 h-5"></i>
+                    </a>
+                    <a href="https://wa.me/5521965757666" target="_blank" rel="noopener noreferrer" class="bg-white border-2 border-slate-200 text-slate-700 hover:border-[#81D715] hover:text-[#65a810] px-8 py-4 rounded-full font-bold text-lg transition-all flex items-center justify-center gap-2">
+                        <i data-lucide="phone" class="w-5 h-5"></i>
+                        (21) 96575-7666
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Plans Section -->
+    <section id="planos" class="py-24 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-20">
+                <h2 class="text-4xl md:text-5xl font-extrabold text-slate-900 mb-6 tracking-tight">Nossos Planos de Estudo</h2>
+                <p class="text-xl text-slate-600 max-w-2xl mx-auto">Escolha o nível ideal para o seu aprendizado e comece hoje mesmo a sua jornada na Língua Brasileira de Sinais.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Básico -->
+                <div class="bg-white rounded-[2rem] p-8 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 relative overflow-hidden group flex flex-col h-full">
+                    <div class="absolute top-0 left-0 w-full h-2 bg-[#81D715]"></div>
+                    <div class="w-14 h-14 bg-lime-100 rounded-2xl flex items-center justify-center mb-8 text-[#65a810] group-hover:scale-110 group-hover:rotate-3 transition-transform duration-300">
+                        <i data-lucide="book-open" class="w-7 h-7"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-slate-900 mb-3">Libras Básico</h3>
+                    <p class="text-slate-500 text-base mb-8 flex-grow">Para quem está começando do zero e quer aprender a se comunicar no dia a dia.</p>
+                    <ul class="space-y-4 mb-10">
+                        <li class="flex items-start gap-3 text-slate-700 font-medium">
+                            <i data-lucide="check-circle-2" class="w-6 h-6 text-[#81D715] shrink-0"></i>
+                            <span>Alfabeto manual e números</span>
+                        </li>
+                        <li class="flex items-start gap-3 text-slate-700 font-medium">
+                            <i data-lucide="check-circle-2" class="w-6 h-6 text-[#81D715] shrink-0"></i>
+                            <span>Saudações e apresentações</span>
+                        </li>
+                        <li class="flex items-start gap-3 text-slate-700 font-medium">
+                            <i data-lucide="check-circle-2" class="w-6 h-6 text-[#81D715] shrink-0"></i>
+                            <span>Vocabulário cotidiano</span>
+                        </li>
+                    </ul>
+                    <a href="https://wa.me/5521965757666?text=Olá! Gostaria de saber mais sobre o plano Libras Básico." target="_blank" rel="noopener noreferrer" class="block w-full text-center bg-slate-100 hover:bg-slate-200 text-slate-900 font-bold py-4 rounded-xl transition-colors mt-auto">
+                        Saber mais
+                    </a>
+                </div>
+
+                <!-- Intermediário -->
+                <div class="bg-white rounded-[2rem] p-8 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 relative overflow-hidden group flex flex-col h-full">
+                    <div class="absolute top-0 left-0 w-full h-2 bg-[#8A0B82]"></div>
+                    <div class="w-14 h-14 bg-purple-100 rounded-2xl flex items-center justify-center mb-8 text-[#8A0B82] group-hover:scale-110 group-hover:rotate-3 transition-transform duration-300">
+                        <i data-lucide="message-circle" class="w-7 h-7"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-slate-900 mb-3">Libras Intermediário</h3>
+                    <p class="text-slate-500 text-base mb-8 flex-grow">Aprofunde seus conhecimentos e desenvolva fluência em conversações.</p>
+                    <ul class="space-y-4 mb-10">
+                        <li class="flex items-start gap-3 text-slate-700 font-medium">
+                            <i data-lucide="check-circle-2" class="w-6 h-6 text-[#8A0B82] shrink-0"></i>
+                            <span>Estruturação de frases</span>
+                        </li>
+                        <li class="flex items-start gap-3 text-slate-700 font-medium">
+                            <i data-lucide="check-circle-2" class="w-6 h-6 text-[#8A0B82] shrink-0"></i>
+                            <span>Expressão facial e corporal</span>
+                        </li>
+                        <li class="flex items-start gap-3 text-slate-700 font-medium">
+                            <i data-lucide="check-circle-2" class="w-6 h-6 text-[#8A0B82] shrink-0"></i>
+                            <span>Diálogos complexos</span>
+                        </li>
+                    </ul>
+                    <a href="https://wa.me/5521965757666?text=Olá! Gostaria de saber mais sobre o plano Libras Intermediário." target="_blank" rel="noopener noreferrer" class="block w-full text-center bg-slate-100 hover:bg-slate-200 text-slate-900 font-bold py-4 rounded-xl transition-colors mt-auto">
+                        Saber mais
+                    </a>
+                </div>
+
+                <!-- Avançado -->
+                <div class="bg-slate-900 rounded-[2rem] p-8 shadow-2xl hover:shadow-3xl transition-all duration-300 relative overflow-hidden group transform md:-translate-y-4 flex flex-col h-full border border-slate-800">
+                    <div class="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-[#81D715] to-[#8A0B82]"></div>
+                    <div class="absolute top-6 right-6 bg-white/10 px-4 py-1.5 rounded-full text-xs font-bold text-white backdrop-blur-md border border-white/20">
+                        Destaque
+                    </div>
+                    <div class="w-14 h-14 bg-white/10 rounded-2xl flex items-center justify-center mb-8 text-white group-hover:scale-110 group-hover:rotate-3 transition-transform duration-300">
+                        <i data-lucide="graduation-cap" class="w-7 h-7"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-3">Libras Avançado</h3>
+                    <p class="text-slate-400 text-base mb-8 flex-grow">Para quem busca fluência total e preparo para atuar profissionalmente.</p>
+                    <ul class="space-y-4 mb-10">
+                        <li class="flex items-start gap-3 text-slate-300 font-medium">
+                            <i data-lucide="check-circle-2" class="w-6 h-6 text-[#81D715] shrink-0"></i>
+                            <span>Tradução e interpretação</span>
+                        </li>
+                        <li class="flex items-start gap-3 text-slate-300 font-medium">
+                            <i data-lucide="check-circle-2" class="w-6 h-6 text-[#81D715] shrink-0"></i>
+                            <span>Gírias e regionalismos</span>
+                        </li>
+                        <li class="flex items-start gap-3 text-slate-300 font-medium">
+                            <i data-lucide="check-circle-2" class="w-6 h-6 text-[#81D715] shrink-0"></i>
+                            <span>Prática intensiva</span>
+                        </li>
+                    </ul>
+                    <a href="https://wa.me/5521965757666?text=Olá! Gostaria de saber mais sobre o plano Libras Avançado." target="_blank" rel="noopener noreferrer" class="block w-full text-center bg-gradient-to-r from-[#81D715] to-[#65a810] hover:from-[#70bd12] hover:to-[#558f0d] text-white font-bold py-4 rounded-xl transition-all shadow-lg mt-auto">
+                        Saber mais
+                    </a>
+                </div>
+
+                <!-- Interpretação Musical -->
+                <div class="bg-white rounded-[2rem] p-8 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 relative overflow-hidden group flex flex-col h-full">
+                    <div class="absolute top-0 left-0 w-full h-2 bg-pink-500"></div>
+                    <div class="w-14 h-14 bg-pink-100 rounded-2xl flex items-center justify-center mb-8 text-pink-500 group-hover:scale-110 group-hover:rotate-3 transition-transform duration-300">
+                        <i data-lucide="music" class="w-7 h-7"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-slate-900 mb-3">Interpretação Musical</h3>
+                    <p class="text-slate-500 text-base mb-8 flex-grow">Aprenda a traduzir sentimentos e ritmo através da Libras em músicas.</p>
+                    <ul class="space-y-4 mb-10">
+                        <li class="flex items-start gap-3 text-slate-700 font-medium">
+                            <i data-lucide="check-circle-2" class="w-6 h-6 text-pink-500 shrink-0"></i>
+                            <span>Poética surda</span>
+                        </li>
+                        <li class="flex items-start gap-3 text-slate-700 font-medium">
+                            <i data-lucide="check-circle-2" class="w-6 h-6 text-pink-500 shrink-0"></i>
+                            <span>Ritmo e expressão</span>
+                        </li>
+                        <li class="flex items-start gap-3 text-slate-700 font-medium">
+                            <i data-lucide="check-circle-2" class="w-6 h-6 text-pink-500 shrink-0"></i>
+                            <span>Tradução de metáforas</span>
+                        </li>
+                    </ul>
+                    <a href="https://wa.me/5521965757666?text=Olá! Gostaria de saber mais sobre o plano de Interpretação Musical." target="_blank" rel="noopener noreferrer" class="block w-full text-center bg-slate-100 hover:bg-slate-200 text-slate-900 font-bold py-4 rounded-xl transition-colors mt-auto">
+                        Saber mais
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="depoimentos" class="py-24 bg-white relative overflow-hidden">
+        <div class="absolute top-0 right-0 -mr-20 -mt-20 w-64 h-64 rounded-full bg-lime-50 opacity-50 blur-3xl"></div>
+        <div class="absolute bottom-0 left-0 -ml-20 -mb-20 w-64 h-64 rounded-full bg-purple-50 opacity-50 blur-3xl"></div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+            <div class="text-center mb-20">
+                <h2 class="text-4xl md:text-5xl font-extrabold text-slate-900 mb-6 tracking-tight">O que nossos alunos dizem</h2>
+                <p class="text-xl text-slate-600 max-w-2xl mx-auto">Histórias reais de quem transformou sua comunicação com a nossa metodologia.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Feedback 1 -->
+                <div class="bg-slate-50 rounded-[2rem] p-8 shadow-sm hover:shadow-md transition-all duration-300 border border-slate-100 relative flex flex-col">
+                    <i data-lucide="quote" class="absolute top-8 right-8 w-10 h-10 text-slate-200"></i>
+                    <div class="flex gap-1 mb-6">
+                        <i data-lucide="star" class="w-5 h-5 fill-[#f09433] text-[#f09433]"></i>
+                        <i data-lucide="star" class="w-5 h-5 fill-[#f09433] text-[#f09433]"></i>
+                        <i data-lucide="star" class="w-5 h-5 fill-[#f09433] text-[#f09433]"></i>
+                        <i data-lucide="star" class="w-5 h-5 fill-[#f09433] text-[#f09433]"></i>
+                        <i data-lucide="star" class="w-5 h-5 fill-[#f09433] text-[#f09433]"></i>
+                    </div>
+                    <p class="text-slate-700 text-lg mb-8 relative z-10 italic flex-grow">
+                        "A didática da Tatiane é incrível! Consegui aprender o básico muito rápido e já consigo me comunicar com surdos no meu trabalho. O material é super prático."
+                    </p>
+                    <div class="flex items-center gap-4 mt-auto">
+                        <div class="w-12 h-12 bg-lime-100 rounded-full flex items-center justify-center text-[#65a810] font-bold text-xl shrink-0">M</div>
+                        <div>
+                            <h4 class="font-bold text-slate-900">Mariana Silva</h4>
+                            <p class="text-sm text-slate-500">Aluna do Libras Básico</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Feedback 2 -->
+                <div class="bg-slate-50 rounded-[2rem] p-8 shadow-sm hover:shadow-md transition-all duration-300 border border-slate-100 relative flex flex-col">
+                    <i data-lucide="quote" class="absolute top-8 right-8 w-10 h-10 text-slate-200"></i>
+                    <div class="flex gap-1 mb-6">
+                        <i data-lucide="star" class="w-5 h-5 fill-[#f09433] text-[#f09433]"></i>
+                        <i data-lucide="star" class="w-5 h-5 fill-[#f09433] text-[#f09433]"></i>
+                        <i data-lucide="star" class="w-5 h-5 fill-[#f09433] text-[#f09433]"></i>
+                        <i data-lucide="star" class="w-5 h-5 fill-[#f09433] text-[#f09433]"></i>
+                        <i data-lucide="star" class="w-5 h-5 fill-[#f09433] text-[#f09433]"></i>
+                    </div>
+                    <p class="text-slate-700 text-lg mb-8 relative z-10 italic flex-grow">
+                        "O curso de interpretação musical superou minhas expectativas. Aprender a passar a emoção da música para a Libras foi uma experiência transformadora."
+                    </p>
+                    <div class="flex items-center gap-4 mt-auto">
+                        <div class="w-12 h-12 bg-pink-100 rounded-full flex items-center justify-center text-pink-500 font-bold text-xl shrink-0">R</div>
+                        <div>
+                            <h4 class="font-bold text-slate-900">Rafael Costa</h4>
+                            <p class="text-sm text-slate-500">Interpretação Musical</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Feedback 3 -->
+                <div class="bg-slate-50 rounded-[2rem] p-8 shadow-sm hover:shadow-md transition-all duration-300 border border-slate-100 relative flex flex-col">
+                    <i data-lucide="quote" class="absolute top-8 right-8 w-10 h-10 text-slate-200"></i>
+                    <div class="flex gap-1 mb-6">
+                        <i data-lucide="star" class="w-5 h-5 fill-[#f09433] text-[#f09433]"></i>
+                        <i data-lucide="star" class="w-5 h-5 fill-[#f09433] text-[#f09433]"></i>
+                        <i data-lucide="star" class="w-5 h-5 fill-[#f09433] text-[#f09433]"></i>
+                        <i data-lucide="star" class="w-5 h-5 fill-[#f09433] text-[#f09433]"></i>
+                        <i data-lucide="star" class="w-5 h-5 fill-[#f09433] text-[#f09433]"></i>
+                    </div>
+                    <p class="text-slate-700 text-lg mb-8 relative z-10 italic flex-grow">
+                        "Estou no nível avançado e a imersão cultural e linguística é fantástica. Recomendo de olhos fechados para quem quer se profissionalizar na área."
+                    </p>
+                    <div class="flex items-center gap-4 mt-auto">
+                        <div class="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center text-[#8A0B82] font-bold text-xl shrink-0">C</div>
+                        <div>
+                            <h4 class="font-bold text-slate-900">Camila Santos</h4>
+                            <p class="text-sm text-slate-500">Aluna do Libras Avançado</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Section -->
+    <section id="video" class="py-24 bg-slate-50">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-4xl md:text-5xl font-extrabold text-slate-900 mb-6 tracking-tight">Conheça nossa metodologia</h2>
+            <p class="text-xl text-slate-600 mb-12 max-w-2xl mx-auto">Assista ao vídeo de apresentação e descubra como transformamos o aprendizado de Libras em uma experiência única e acessível.</p>
+            
+            <a href="https://www.youtube.com/@tdlibras_?app=desktop" target="_blank" rel="noopener noreferrer" class="relative w-full aspect-video rounded-[2rem] overflow-hidden shadow-2xl group cursor-pointer border-4 border-white bg-slate-200 block">
+                <img 
+                    src="https://images.unsplash.com/photo-1573497620053-ea5300f94f21?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80" 
+                    alt="Professora ensinando Libras" 
+                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                />
+                <div class="absolute inset-0 bg-slate-900/40 group-hover:bg-slate-900/30 transition-colors flex items-center justify-center">
+                    <div class="w-20 h-20 bg-[#81D715] rounded-full flex items-center justify-center shadow-lg transform group-hover:scale-110 transition-transform duration-300">
+                        <i data-lucide="play" class="w-8 h-8 text-white ml-2" fill="currentColor"></i>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <!-- CTA / Contact Section -->
+    <section id="contato" class="py-24 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-4xl md:text-5xl font-extrabold text-slate-900 mb-6 tracking-tight">Pronto para começar?</h2>
+            <p class="text-xl text-slate-600 mb-12 max-w-2xl mx-auto">Entre em contato conosco pelo WhatsApp para tirar dúvidas ou acompanhe nosso trabalho no Instagram.</p>
+            
+            <div class="flex flex-col sm:flex-row gap-6 justify-center items-center">
+                <a href="https://wa.me/5521965757666" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 bg-[#25D366] hover:bg-[#20bd5a] text-white px-10 py-5 rounded-full font-bold text-lg transition-all shadow-lg hover:shadow-xl w-full sm:w-auto justify-center">
+                    <i data-lucide="message-circle" class="w-6 h-6"></i>
+                    (21) 96575-7666
+                </a>
+                
+                <a href="https://www.instagram.com/tdlibras_?igsh=c2U5NWxycXZlcnJ1" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 bg-gradient-to-tr from-[#f09433] via-[#e6683c] to-[#bc1888] hover:opacity-90 text-white px-10 py-5 rounded-full font-bold text-lg transition-all shadow-lg hover:shadow-xl w-full sm:w-auto justify-center">
+                    <i data-lucide="instagram" class="w-6 h-6"></i>
+                    @tdlibras_
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 py-16 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-8">
+            <div class="flex items-center gap-3">
+                <div class="relative w-10 h-10 flex-shrink-0">
+                    <div class="absolute right-0 bottom-0 w-7 h-7 bg-[#8A0B82] rounded-xl rounded-bl-none flex items-center justify-center">
+                        <i data-lucide="hand" class="w-3 h-3 text-white"></i>
+                    </div>
+                    <div class="absolute left-0 top-0 w-7 h-7 bg-[#81D715] rounded-full flex items-center justify-center z-10">
+                        <i data-lucide="hand-metal" class="w-3 h-3 text-white"></i>
+                    </div>
+                </div>
+                <div class="flex flex-col">
+                    <span class="text-xl font-black tracking-tight text-white leading-none">Tatiane Dias</span>
+                    <span class="text-[9px] font-semibold tracking-[0.2em] text-slate-400 uppercase mt-1">Curso de Libras</span>
+                </div>
+            </div>
+            
+            <p class="text-slate-400 text-sm text-center md:text-left font-medium">
+                &copy; <script>document.write(new Date().getFullYear())</script> Tatiane Dias. Todos os direitos reservados.
+            </p>
+            
+            <div class="flex gap-6">
+                <a href="https://www.instagram.com/tdlibras_?igsh=c2U5NWxycXZlcnJ1" target="_blank" rel="noopener noreferrer" class="text-slate-400 hover:text-white transition-colors bg-slate-800 p-3 rounded-full hover:bg-slate-700">
+                    <i data-lucide="instagram" class="w-5 h-5"></i>
+                </a>
+                <a href="https://wa.me/5521965757666" target="_blank" rel="noopener noreferrer" class="text-slate-400 hover:text-white transition-colors bg-slate-800 p-3 rounded-full hover:bg-slate-700">
+                    <i data-lucide="phone" class="w-5 h-5"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Inicializar ícones Lucide -->
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
